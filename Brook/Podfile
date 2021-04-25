@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :macos, '10.12'
+
+target 'Brook' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Brook
+
+  pod 'Alamofire', '~> 5.2'
+  pod 'SnapKit', '~> 5.0.0'
+  
+end

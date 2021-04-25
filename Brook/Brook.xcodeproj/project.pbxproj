@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A46FF27A4C0E8C704A7CC975 /* Pods_Brook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B7662B990EF450513EF10A /* Pods_Brook.framework */; };
+		E67013B22635B591001A41EE /* BKAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67013B12635B591001A41EE /* BKAppDelegate.swift */; };
+		E67013B42635B591001A41EE /* BKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67013B32635B591001A41EE /* BKViewController.swift */; };
+		E67013B62635B592001A41EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67013B52635B592001A41EE /* Assets.xcassets */; };
+		E67013B92635B592001A41EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67013B72635B592001A41EE /* Main.storyboard */; };
+		E67013C62635B6C6001A41EE /* BKMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67013C52635B6C6001A41EE /* BKMainViewController.swift */; };
+		E67013C92635B707001A41EE /* BKAddServerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67013C82635B707001A41EE /* BKAddServerListViewController.swift */; };
+		E67013CC2635B72E001A41EE /* BKAboutBrookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67013CB2635B72E001A41EE /* BKAboutBrookViewController.swift */; };
+		E67013D52635B83C001A41EE /* BKNativeGoLibManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67013D42635B83C001A41EE /* BKNativeGoLibManager.swift */; };
+		E67013D82635B876001A41EE /* BKProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67013D72635B876001A41EE /* BKProxyManager.swift */; };
+		E67013E32635BA9F001A41EE /* SystemConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67013E22635BA9F001A41EE /* SystemConfig.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11B7662B990EF450513EF10A /* Pods_Brook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1756A2C1A14D6D2D7ADA6B98 /* Pods-Brook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brook.debug.xcconfig"; path = "Target Support Files/Pods-Brook/Pods-Brook.debug.xcconfig"; sourceTree = "<group>"; };
+		481FB9360C5EACD9311E1BC7 /* Pods-Brook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brook.release.xcconfig"; path = "Target Support Files/Pods-Brook/Pods-Brook.release.xcconfig"; sourceTree = "<group>"; };
+		E67013AE2635B591001A41EE /* Brook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67013B12635B591001A41EE /* BKAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKAppDelegate.swift; sourceTree = "<group>"; };
+		E67013B32635B591001A41EE /* BKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKViewController.swift; sourceTree = "<group>"; };
+		E67013B52635B592001A41EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E67013B82635B592001A41EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E67013BA2635B592001A41EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E67013BB2635B592001A41EE /* Brook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Brook.entitlements; sourceTree = "<group>"; };
+		E67013C52635B6C6001A41EE /* BKMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKMainViewController.swift; sourceTree = "<group>"; };
+		E67013C82635B707001A41EE /* BKAddServerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKAddServerListViewController.swift; sourceTree = "<group>"; };
+		E67013CB2635B72E001A41EE /* BKAboutBrookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKAboutBrookViewController.swift; sourceTree = "<group>"; };
+		E67013D42635B83C001A41EE /* BKNativeGoLibManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKNativeGoLibManager.swift; sourceTree = "<group>"; };
+		E67013D72635B876001A41EE /* BKProxyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKProxyManager.swift; sourceTree = "<group>"; };
+		E67013E22635BA9F001A41EE /* SystemConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemConfig.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E67013AB2635B591001A41EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46FF27A4C0E8C704A7CC975 /* Pods_Brook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8098A2F93672D0E51E5084DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1756A2C1A14D6D2D7ADA6B98 /* Pods-Brook.debug.xcconfig */,
+				481FB9360C5EACD9311E1BC7 /* Pods-Brook.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E67013A52635B591001A41EE = {
+			isa = PBXGroup;
+			children = (
+				E67013B02635B591001A41EE /* Brook */,
+				E67013AF2635B591001A41EE /* Products */,
+				8098A2F93672D0E51E5084DB /* Pods */,
+				EB54B36074627362641D5BC3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E67013AF2635B591001A41EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E67013AE2635B591001A41EE /* Brook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E67013B02635B591001A41EE /* Brook */ = {
+			isa = PBXGroup;
+			children = (
+				E67013E12635BA64001A41EE /* SystemConfig */,
+				E67013CE2635B75C001A41EE /* Modules */,
+				E67013B12635B591001A41EE /* BKAppDelegate.swift */,
+				E67013B32635B591001A41EE /* BKViewController.swift */,
+				E67013B52635B592001A41EE /* Assets.xcassets */,
+				E67013B72635B592001A41EE /* Main.storyboard */,
+				E67013BA2635B592001A41EE /* Info.plist */,
+				E67013BB2635B592001A41EE /* Brook.entitlements */,
+			);
+			path = Brook;
+			sourceTree = "<group>";
+		};
+		E67013CE2635B75C001A41EE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E67013D32635B7CA001A41EE /* NativeGoLibManager */,
+				E67013D22635B7B0001A41EE /* ProxyManager */,
+				E67013D12635B796001A41EE /* AboutBrookPage */,
+				E67013D02635B779001A41EE /* AddServerListPage */,
+				E67013CF2635B76C001A41EE /* HomePage */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E67013CF2635B76C001A41EE /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				E67013C52635B6C6001A41EE /* BKMainViewController.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		E67013D02635B779001A41EE /* AddServerListPage */ = {
+			isa = PBXGroup;
+			children = (
+				E67013C82635B707001A41EE /* BKAddServerListViewController.swift */,
+			);
+			path = AddServerListPage;
+			sourceTree = "<group>";
+		};
+		E67013D12635B796001A41EE /* AboutBrookPage */ = {
+			isa = PBXGroup;
+			children = (
+				E67013CB2635B72E001A41EE /* BKAboutBrookViewController.swift */,
+			);
+			path = AboutBrookPage;
+			sourceTree = "<group>";
+		};
+		E67013D22635B7B0001A41EE /* ProxyManager */ = {
+			isa = PBXGroup;
+			children = (
+				E67013D72635B876001A41EE /* BKProxyManager.swift */,
+			);
+			path = ProxyManager;
+			sourceTree = "<group>";
+		};
+		E67013D32635B7CA001A41EE /* NativeGoLibManager */ = {
+			isa = PBXGroup;
+			children = (
+				E67013D42635B83C001A41EE /* BKNativeGoLibManager.swift */,
+			);
+			path = NativeGoLibManager;
+			sourceTree = "<group>";
+		};
+		E67013E12635BA64001A41EE /* SystemConfig */ = {
+			isa = PBXGroup;
+			children = (
+				E67013E22635BA9F001A41EE /* SystemConfig.swift */,
+			);
+			path = SystemConfig;
+			sourceTree = "<group>";
+		};
+		EB54B36074627362641D5BC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11B7662B990EF450513EF10A /* Pods_Brook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E67013AD2635B591001A41EE /* Brook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E67013BE2635B592001A41EE /* Build configuration list for PBXNativeTarget "Brook" */;
+			buildPhases = (
+				6E3E44F3FEAFD103EAD8A109 /* [CP] Check Pods Manifest.lock */,
+				E67013AA2635B591001A41EE /* Sources */,
+				E67013AB2635B591001A41EE /* Frameworks */,
+				E67013AC2635B591001A41EE /* Resources */,
+				04D48059C68F6F48EAE5EFC9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Brook;
+			productName = Brook;
+			productReference = E67013AE2635B591001A41EE /* Brook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E67013A62635B591001A41EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BK;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = Brook;
+				TargetAttributes = {
+					E67013AD2635B591001A41EE = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = E67013A92635B591001A41EE /* Build configuration list for PBXProject "Brook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E67013A52635B591001A41EE;
+			productRefGroup = E67013AF2635B591001A41EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E67013AD2635B591001A41EE /* Brook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E67013AC2635B591001A41EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E67013B62635B592001A41EE /* Assets.xcassets in Resources */,
+				E67013B92635B592001A41EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04D48059C68F6F48EAE5EFC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brook/Pods-Brook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brook/Pods-Brook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brook/Pods-Brook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E3E44F3FEAFD103EAD8A109 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E67013AA2635B591001A41EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E67013E32635BA9F001A41EE /* SystemConfig.swift in Sources */,
+				E67013B42635B591001A41EE /* BKViewController.swift in Sources */,
+				E67013D82635B876001A41EE /* BKProxyManager.swift in Sources */,
+				E67013D52635B83C001A41EE /* BKNativeGoLibManager.swift in Sources */,
+				E67013CC2635B72E001A41EE /* BKAboutBrookViewController.swift in Sources */,
+				E67013C62635B6C6001A41EE /* BKMainViewController.swift in Sources */,
+				E67013C92635B707001A41EE /* BKAddServerListViewController.swift in Sources */,
+				E67013B22635B591001A41EE /* BKAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E67013B72635B592001A41EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E67013B82635B592001A41EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E67013BC2635B592001A41EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E67013BD2635B592001A41EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E67013BF2635B592001A41EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1756A2C1A14D6D2D7ADA6B98 /* Pods-Brook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Brook/Brook.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Brook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Brook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E67013C02635B592001A41EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 481FB9360C5EACD9311E1BC7 /* Pods-Brook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Brook/Brook.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Brook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Brook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E67013A92635B591001A41EE /* Build configuration list for PBXProject "Brook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E67013BC2635B592001A41EE /* Debug */,
+				E67013BD2635B592001A41EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E67013BE2635B592001A41EE /* Build configuration list for PBXNativeTarget "Brook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E67013BF2635B592001A41EE /* Debug */,
+				E67013C02635B592001A41EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E67013A62635B591001A41EE /* Project object */;
+}
