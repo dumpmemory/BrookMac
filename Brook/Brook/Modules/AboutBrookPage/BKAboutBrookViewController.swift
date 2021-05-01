@@ -15,4 +15,10 @@ class BKAboutBrookViewController: NSViewController {
         // Do view setup here.
     }
     
+    @IBAction func jumpSourceRepoEvent(_ sender: NSButton) {
+        
+        NSWorkspace.shared.open(URL.init(string: "https://github.com/txthinking/brook")!);
+        
+    }
+    
 }

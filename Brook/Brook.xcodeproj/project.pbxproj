@@ -18,6 +18,7 @@
 		E67013D52635B83C001A41EE /* BKNativeGoLibManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67013D42635B83C001A41EE /* BKNativeGoLibManager.swift */; };
 		E67013D82635B876001A41EE /* BKProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67013D72635B876001A41EE /* BKProxyManager.swift */; };
 		E67013E32635BA9F001A41EE /* SystemConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67013E22635BA9F001A41EE /* SystemConfig.swift */; };
+		E6A87525263DA39100B49330 /* BKAddServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A87524263DA39100B49330 /* BKAddServerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		E67013D42635B83C001A41EE /* BKNativeGoLibManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKNativeGoLibManager.swift; sourceTree = "<group>"; };
 		E67013D72635B876001A41EE /* BKProxyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKProxyManager.swift; sourceTree = "<group>"; };
 		E67013E22635BA9F001A41EE /* SystemConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemConfig.swift; sourceTree = "<group>"; };
+		E6A87524263DA39100B49330 /* BKAddServerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKAddServerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				E67013C52635B6C6001A41EE /* BKMainViewController.swift */,
+				E6A87524263DA39100B49330 /* BKAddServerViewController.swift */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				E67013D82635B876001A41EE /* BKProxyManager.swift in Sources */,
 				E67013D52635B83C001A41EE /* BKNativeGoLibManager.swift in Sources */,
 				E67013CC2635B72E001A41EE /* BKAboutBrookViewController.swift in Sources */,
+				E6A87525263DA39100B49330 /* BKAddServerViewController.swift in Sources */,
 				E67013C62635B6C6001A41EE /* BKMainViewController.swift in Sources */,
 				E67013C92635B707001A41EE /* BKAddServerListViewController.swift in Sources */,
 				E67013B22635B591001A41EE /* BKAppDelegate.swift in Sources */,
