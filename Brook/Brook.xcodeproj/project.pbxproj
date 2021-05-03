@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A46FF27A4C0E8C704A7CC975 /* Pods_Brook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B7662B990EF450513EF10A /* Pods_Brook.framework */; };
+		E62A0D5E2640541500F11865 /* BKDisplayServerInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62A0D5D2640541500F11865 /* BKDisplayServerInfoCell.swift */; };
 		E67013B22635B591001A41EE /* BKAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67013B12635B591001A41EE /* BKAppDelegate.swift */; };
 		E67013B42635B591001A41EE /* BKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67013B32635B591001A41EE /* BKViewController.swift */; };
 		E67013B62635B592001A41EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67013B52635B592001A41EE /* Assets.xcassets */; };
@@ -25,6 +26,8 @@
 		11B7662B990EF450513EF10A /* Pods_Brook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1756A2C1A14D6D2D7ADA6B98 /* Pods-Brook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brook.debug.xcconfig"; path = "Target Support Files/Pods-Brook/Pods-Brook.debug.xcconfig"; sourceTree = "<group>"; };
 		481FB9360C5EACD9311E1BC7 /* Pods-Brook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brook.release.xcconfig"; path = "Target Support Files/Pods-Brook/Pods-Brook.release.xcconfig"; sourceTree = "<group>"; };
+		E62A0D512640520500F11865 /* Brook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brook-Bridging-Header.h"; sourceTree = "<group>"; };
+		E62A0D5D2640541500F11865 /* BKDisplayServerInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKDisplayServerInfoCell.swift; sourceTree = "<group>"; };
 		E67013AE2635B591001A41EE /* Brook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67013B12635B591001A41EE /* BKAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKAppDelegate.swift; sourceTree = "<group>"; };
 		E67013B32635B591001A41EE /* BKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +65,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E62A0D50264051EE00F11865 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				E62A0D512640520500F11865 /* Brook-Bridging-Header.h */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		E62A0D5C264053DB00F11865 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E62A0D5D2640541500F11865 /* BKDisplayServerInfoCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E67013A52635B591001A41EE = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +102,7 @@
 		E67013B02635B591001A41EE /* Brook */ = {
 			isa = PBXGroup;
 			children = (
+				E62A0D50264051EE00F11865 /* Bridge */,
 				E67013E12635BA64001A41EE /* SystemConfig */,
 				E67013CE2635B75C001A41EE /* Modules */,
 				E67013B12635B591001A41EE /* BKAppDelegate.swift */,
@@ -98,6 +118,7 @@
 		E67013CE2635B75C001A41EE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E62A0D5C264053DB00F11865 /* Views */,
 				E67013D32635B7CA001A41EE /* NativeGoLibManager */,
 				E67013D22635B7B0001A41EE /* ProxyManager */,
 				E67013D12635B796001A41EE /* AboutBrookPage */,
@@ -199,6 +220,7 @@
 				TargetAttributes = {
 					E67013AD2635B591001A41EE = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -287,6 +309,7 @@
 				E6A87525263DA39100B49330 /* BKAddServerViewController.swift in Sources */,
 				E67013C62635B6C6001A41EE /* BKMainViewController.swift in Sources */,
 				E67013C92635B707001A41EE /* BKAddServerListViewController.swift in Sources */,
+				E62A0D5E2640541500F11865 /* BKDisplayServerInfoCell.swift in Sources */,
 				E67013B22635B591001A41EE /* BKAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Brook/Brook.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -437,6 +461,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Brook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Brook/Bridge/Brook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -447,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Brook/Brook.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -458,6 +485,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Brook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Brook/Bridge/Brook-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
